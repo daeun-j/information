@@ -1,0 +1,4 @@
+python3 h.py --epochs 10
+python3 z.py --epochs 10
+python3 h.py --epochs 30
+python3 z.py --epochs 30

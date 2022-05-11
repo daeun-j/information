@@ -1,0 +1,130 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import glob, os
+import pandas as pd
+
+####################
+#### Simulation  ###
+####################
+'''
+PATH = 'sort/simulation_v3/'
+# data 1
+service = 1
+user = [1, 2, 3]
+num_data = 80000
+mu, sigma = 10, 0.3  # mean and standard deviation
+s1 = np.random.normal(mu, sigma, num_data)
+s2 = np.random.normal(mu, sigma*2, num_data)
+s3 = np.random.normal(mu, sigma*3, num_data)
+s = np.hstack([s1, s2, s3])
+S1 = s
+plt.hist(s, bins=1200, density=True)
+plt.show()
+
+x = np.linspace(0, np.ceil(max(s)), len(s))
+plt.plot(x, s, '.', color='black')
+plt.show()
+s = np.reshape(s, (-1, 8))
+label_s = np.array([service] * s.shape[0])
+label_u = np.array(sum([[id+1] * (i//8) for id, i in enumerate([len(s1), len(s2), len(s3)])], []))
+
+out = np.column_stack((label_s, label_u, s))
+np.random.shuffle(out)
+
+plt.plot(x, out[:, 2:].flatten(), '.', color='black')
+plt.show()
+np.savetxt(PATH+"{}_{}.txt".format(service, mu), out, delimiter=' ', fmt='%1.9f')
+
+
+# data 2
+service = 2
+num_data = 80000
+mu, sigma = 10, 0.2  # mean and standard deviation
+s1 = np.random.normal(mu, sigma, num_data)
+s2 = np.random.normal(mu, sigma+0.3, num_data)
+s3 = np.random.normal(mu, sigma+0.6, num_data)
+s = np.hstack([s1, s2, s3])
+S2 = s
+plt.hist(s, bins=1200, density=True)
+plt.show()
+
+x = np.linspace(0, np.ceil(max(s)), len(s))
+plt.plot(x, s, '.', color='red')
+plt.show()
+s = np.reshape(s, (-1, 8))
+label_s = np.array([service] * s.shape[0])
+label_u = np.array(sum([[id+1] * (i//8) for id, i in enumerate([len(s1), len(s2), len(s3)])], []))
+
+out = np.column_stack((label_s, label_u, s))
+np.random.shuffle(out)
+
+plt.plot(x, out[:, 2:].flatten(), '.', color='red')
+plt.show()
+np.savetxt(PATH+"{}_{}.txt".format(service, mu), out, delimiter=' ', fmt='%1.9f')
+
+plt.hist(S2, bins=1200, density=True)
+plt.hist(S1, bins=1200, density=True)
+
+plt.show()
+
+
+
+# data 3
+service = 3
+num_data = 80000
+mu, sigma = 10, 0.1  # mean and standard deviation
+s1 = np.random.normal(mu, sigma, num_data)
+s2 = np.random.normal(mu, sigma+0.3, num_data)
+s3 = np.random.normal(mu, sigma+0.6, num_data)
+s = np.hstack([s1, s2, s3])
+
+plt.hist(s, bins=1200, density=True)
+plt.show()
+
+x = np.linspace(0, np.ceil(max(s)), len(s))
+plt.plot(x, s, '.', color='green')
+plt.show()
+s = np.reshape(s, (-1, 8))
+label_s = np.array([service] * s.shape[0])
+label_u = np.array(sum([[id+1] * (i//8) for id, i in enumerate([len(s1), len(s2), len(s3)])], []))
+
+
+out = np.column_stack((label_s, label_u, s))
+np.random.shuffle(out)
+
+plt.plot(x, out[:, 2:].flatten(), '.', color='green')
+plt.show()
+np.savetxt(PATH+"{}_{}.txt".format(service, mu), out, delimiter=' ', fmt='%1.9f')
+
+'''
+####################
+####  Network    ###
+####################
+
+
+path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(path)
+# PATH = "2022_3/simulation/data/network/" # for python console
+PATH = 'sort/network_v2/'
+filenames = glob.glob(PATH + '*txt')
+
+# labels = np.array(['Y', 'Z', 'T']); where_label = 13
+labels = np.array(['Y', 'S']); where_label = 16
+
+for idx, filename in enumerate(sorted(filenames)):
+    print(idx, filename)
+    length = pd.read_csv(filename, delimiter='\t')['Length'].to_numpy()
+    length = np.reshape(length[:-(length.shape[0]%8)], (-1, 8))
+    label_u = np.array([idx] * length.shape[0])
+    print(filename[where_label])
+    label_s = np.array([np.where(filename[where_label] == labels)[0][0]] * length.shape[0])
+    plt.hist(length, bins=1200, density=True)
+    plt.show()
+    out = np.column_stack((label_s, label_u, length))
+    # x = np.linspace(0, np.ceil(max(length)), len(length))
+
+    # np.random.shuffle(out)
+    # plt.plot(x, out[:, 2:].flatten(), '.', color='green')
+    plt.show()
+    np.savetxt(PATH+"{}_{}.txt".format(filename[where_label], idx), out, delimiter=' ', fmt='%1.9f')
+
