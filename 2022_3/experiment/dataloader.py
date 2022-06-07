@@ -62,6 +62,12 @@ class Simulation(Dataset):
         self.transform = transform
         self.to_pil = transforms.ToTensor()
         self.num_features = num_features
+
+        self.images = df.iloc[:, 3:].values  # .astype(np.uint8)
+        self.label_s = df.iloc[:, 1].values
+        self.label_u = df.iloc[:, 2].values
+        self.index = df.index.values
+
         if self.is_train:
             self.images = df.iloc[:, 3:].values  # .astype(np.uint8)
             self.label_s = df.iloc[:, 1].values
@@ -72,6 +78,7 @@ class Simulation(Dataset):
             self.images = df.iloc[:, 3:].values  # .astype(np.uint8)
             self.label_s = df.iloc[:, 1].values
             self.label_u = df.iloc[:, 2].values
+            self.index = df.index.values
 
     def __len__(self):
         return len(self.images)

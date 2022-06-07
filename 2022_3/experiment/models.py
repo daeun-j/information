@@ -181,15 +181,61 @@ class VAE(nn.Module):
         return self.decode(z), mu, logvar
 
 
-# Reconstruction + KL divergence losses summed over all elements and batch
-def loss_function(recon_x, x, mu, logvar, num_features):
-    BCE = F.binary_cross_entropy(recon_x, x.view(-1, num_features), reduction='sum')
 
-    # see Appendix B from VAE paper:
-    # Kingma and Welling. Auto-Encoding Variational Bayes. ICLR, 2014
-    # https://arxiv.org/abs/1312.6114
-    # 0.5 * sum(1 + log(sigma^2) - mu^2 - sigma^2)
-    # KLD = - 0.5 * torch.sum(1 + logvar*2 - mu.pow(2) - logvar.exp().pow(2))
 
-    KLD = -0.5 * torch.sum(1 + logvar - mu.pow(2) - logvar.exp())
-    return BCE + KLD
+####################
+####### h+z ########
+####################
+
+class concat_v2(nn.Module):
+    def __init__(self, num_features, emb_dim, batch):
+        super(concat_v2, self).__init__()
+        self.num_features = num_features
+        self.num_batch = batch
+        self.emb_dim = emb_dim
+        self.conv1 = nn.Conv1d(in_channels=self.num_features, out_channels=self.num_features, padding=2, dilation=2,
+                               kernel_size=3, stride=1)
+        self.conv2 = nn.Conv1d(in_channels=self.num_features, out_channels=self.num_features, padding=4, dilation=2,
+                               kernel_size=5, stride=1)
+        self.conv3 = nn.Conv1d(in_channels=self.num_features, out_channels=self.num_features, padding=6, dilation=2,
+                               kernel_size=7, stride=1)
+        self.th = nn.Threshold(0.0001, 0) # less than 0.5 is 0
+        self.activation = nn.PReLU()
+        self.fc = nn.Sequential(
+            nn.Linear(self.num_features,  self.num_features*2),
+            nn.PReLU()
+        )
+        self.bn1 = torch.nn.BatchNorm1d(self.num_features)
+        self.bn2 = torch.nn.BatchNorm1d(self.num_features)
+
+    def forward(self, x):
+        h1 = self.h(x)
+        z1 = self.z(x, h1)
+        h1 = self.activation(h1)
+        # print("h, z", h1, z1)
+        z1 = self.activation(z1)
+        return h1, z1
+
+    def h(self, x):
+        x = x.view(self.num_batch, -1)
+        # x = x.reshape(1, self.num_features, self.num_batch)
+        x = self.conv1(x.reshape(1, self.num_features, self.num_batch))
+        # x = self.bn1(x)
+        x = self.conv2(x.reshape(1, self.num_features, self.num_batch))
+        # x = self.bn2(x)
+        x = self.conv3(x.reshape(1, self.num_features, self.num_batch))
+        x = x.view(self.num_batch, -1)
+        return x
+
+    def z(self, x, h):
+        x = x.view(self.num_batch, -1)
+        # h = h.view(self.num_batch, -1)
+        # x = x.reshape(1, self.num_features, self.num_batch)
+        # h = h.reshape(1, self.num_features, self.num_batch)
+
+        x = torch.sub(x, h, alpha=1)
+        x = self.th(x)
+        # x = x.view(self.num_batch, -1)
+        x = self.fc(x)
+        x = x.view(self.num_batch, -1)
+        return x

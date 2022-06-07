@@ -2,62 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baba14da-a983-49ef-9f76-aaa458893c18" name="Default Changelist" comment="add files">
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/ResNet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/Triplet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/VAE.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Network_10_all.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Network_1_all.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Network_all.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Network_submission_trVAE.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Network_trained_model.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Network_trained_model_VAE.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/T_0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/T_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/T_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Y_3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Y_4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Y_5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Z_6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Z_7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Z_8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/Z_9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/raw/Telegram_UE7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/raw/Telegram_UE8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/raw/Telegram_UE9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/raw/YouTube_UE0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/raw/YouTube_UE1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/raw/YouTube_UE2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/raw/Zoom_UE3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/raw/Zoom_UE4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/raw/Zoom_UE5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/raw/Zoom_UE6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/network/submission.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v1/1_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v1/2_13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v1/3_15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v1/Simulation_all.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v1/Simulation_submission.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v1/Simulation_submission_trVAE.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v2/1_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v2/2_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v2/Simulation_all.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v2/Simulation_submission.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v2/Simulation_submission_trVAE.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v2/Simulation_trained_model.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v2/Simulation_trained_model_VAE.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v2/simulation_dist.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v3/1_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v3/2_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v3/3_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v3/Simulation_all.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v3/Simulation_submission.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v3/Simulation_submission_trVAE.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v3/Simulation_trained_model.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/data/simulation_v3/Simulation_trained_model_VAE.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/generation" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/plot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/trained_model.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/simulation/trained_model_VAE.pth" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022_3/experiment/concat_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/meta_description.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/meta_description.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022_3/experiment/clf_ml.py" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3/experiment/clf_ml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022_3/experiment/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3/experiment/dataloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022_3/experiment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3/experiment/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022_3/experiment/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3/experiment/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +37,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -90,7 +45,8 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="yaml" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/2022_3/network" />
+    <property name="credentialsType com.jetbrains.python.remote.PyCreateRemoteInterpreterDialog$PyCreateRemoteSdkForm" value="Web Deployment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -104,36 +60,14 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2022_3/experiment" />
+      <recent name="$PROJECT_DIR$/2022_3/experiment/sort" />
       <recent name="$PROJECT_DIR$/2022_3/simulation/data/simulation_v1" />
       <recent name="$PROJECT_DIR$/2022_3/simulation/data/network/raw" />
       <recent name="$PROJECT_DIR$/2022_3/simulation/data" />
-      <recent name="$PROJECT_DIR$/2022_3" />
-      <recent name="$PROJECT_DIR$/refback" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Triplet">
-    <configuration name="ResNet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="meta_description" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2022_3/simulation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2022_3/simulation/ResNet.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.clf_ml">
     <configuration name="Triplet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="meta_description" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,6 +104,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2022_3/simulation/VAE.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="clf_ml" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="meta_description" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2022_3/experiment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2022_3/experiment/clf_ml.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -224,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.clf_ml" />
         <item itemvalue="Python.Triplet" />
         <item itemvalue="Python.plot" />
         <item itemvalue="Python.VAE" />
         <item itemvalue="Python.generation (1)" />
-        <item itemvalue="Python.ResNet" />
       </list>
     </recent_temporary>
   </component>
@@ -274,6 +230,16 @@
       <workItem from="1646976200900" duration="3019000" />
       <workItem from="1646983034616" duration="4000" />
       <workItem from="1652252277858" duration="394000" />
+      <workItem from="1652255099377" duration="2000" />
+      <workItem from="1652255135951" duration="284000" />
+      <workItem from="1652255426441" duration="1000" />
+      <workItem from="1652329870397" duration="4130000" />
+      <workItem from="1652416424573" duration="1106000" />
+      <workItem from="1652767908182" duration="1310000" />
+      <workItem from="1652957382610" duration="1358000" />
+      <workItem from="1652958771538" duration="29000" />
+      <workItem from="1652958807440" duration="2517000" />
+      <workItem from="1654576888703" duration="1275000" />
     </task>
     <servers />
   </component>
@@ -312,7 +278,7 @@
     <SUITE FILE_PATH="coverage/information$concat_hz.coverage" NAME="concat_hz Coverage Results" MODIFIED="1650872439826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/experiment" />
     <SUITE FILE_PATH="coverage/information$utils.coverage" NAME="Triplet Coverage Results" MODIFIED="1646440535347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/simulation" />
     <SUITE FILE_PATH="coverage/information$h.coverage" NAME="h Coverage Results" MODIFIED="1649847059889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/experiment" />
-    <SUITE FILE_PATH="coverage/meta_description$clf_ml.coverage" NAME="clf_ml Coverage Results" MODIFIED="1652074719322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/experiment" />
+    <SUITE FILE_PATH="coverage/meta_description$clf_ml.coverage" NAME="clf_ml Coverage Results" MODIFIED="1652334828663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/experiment" />
     <SUITE FILE_PATH="coverage/meta_description$concat_hz.coverage" NAME="concat_hz Coverage Results" MODIFIED="1652074411124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/experiment" />
     <SUITE FILE_PATH="coverage/information$h_supervised.coverage" NAME="h_supervised Coverage Results" MODIFIED="1649833409984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/experiment" />
     <SUITE FILE_PATH="coverage/information$refbackup_comp_mi_complexity.coverage" NAME="refbackup_comp_mi_complexity Coverage Results" MODIFIED="1639540979571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
