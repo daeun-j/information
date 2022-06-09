@@ -28,6 +28,12 @@ output_filename = "submission_{}.csv".format(args.clf)
 files = glob.glob('./{}simulation_*_hz.csv'.format(PATH))
 os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'
 
+def createDirectory(directory):
+    try:
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+    except OSError:
+        print("Error: Failed to create the directory.")
 
 # https://hwi-doc.tistory.com/entry/%EC%9D%B4%ED%95%B4%ED%95%98%EA%B3%A0-%EC%82%AC%EC%9A%A9%ED%95%98%EC%9E%90-XGBoost
 # https://machinelearningmastery.com/how-to-configure-k-fold-cross-validation/
@@ -146,7 +152,7 @@ with open('{}{}'.format(PATH, output_filename),'w') as f:
         x_train, x_test, y_train, y_test = train_test_split(raw,  labels_u, stratify= labels_u, shuffle=True, random_state=34, test_size=test_size)
         tree.fit(x_train,  y_train) # xtrain, ytrain
         y_pred = tree.predict(x_test)
-        result = evaluate_class(y_test, y_pred)
+        acc, prec, recal = evaluate_class(y_test, y_pred)
         print(' raw | z | {} | {} | {} | {} | {}'.format(totepo, curepo, acc, prec, recal))
         print(' raw | z | {} | {} | {} | {} | {}'.format(totepo, curepo, acc, prec, recal), file=f)
         # f.write('{} | raw | z | {} '.format(file, result))
@@ -156,7 +162,7 @@ with open('{}{}'.format(PATH, output_filename),'w') as f:
         x_train, x_test, y_train, y_test = train_test_split(raw,  labels_u, stratify= labels_u, shuffle=True, random_state=34, test_size=test_size)
         tree.fit(x_train,  y_train) # xtrain, ytrain
         y_pred = tree.predict(x_test)
-        result = evaluate_class(y_test, y_pred)
+        acc, prec, recal = evaluate_class(y_test, y_pred)
         print(' meta | h | {} | {} | {} | {} | {}'.format(totepo, curepo, acc, prec, recal))
         print(' meta | h | {} | {} | {} | {} | {}'.format(totepo, curepo, acc, prec, recal), file=f)
         # f.write('{} | meta | h | {} '.format(file, result))
@@ -166,7 +172,7 @@ with open('{}{}'.format(PATH, output_filename),'w') as f:
         x_train, x_test, y_train, y_test = train_test_split(raw,  labels_u, stratify= labels_u, shuffle=True, random_state=34, test_size=test_size)
         tree.fit(x_train,  y_train) # xtrain, ytrain
         y_pred = tree.predict(x_test)
-        result = evaluate_class(y_test, y_pred)
+        acc, prec, recal = evaluate_class(y_test, y_pred)
         print(' meta | z | {} | {} | {} | {} | {}'.format(totepo, curepo, acc, prec, recal))
         print(' meta | z | {} | {} | {} | {} | {}'.format(totepo, curepo, acc, prec, recal), file=f)
 

@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baba14da-a983-49ef-9f76-aaa458893c18" name="Default Changelist" comment="add files">
-      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022_3/experiment/concat_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/meta_description.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/meta_description.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/experiment/clf_ml.py" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3/experiment/clf_ml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/experiment/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3/experiment/dataloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/experiment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3/experiment/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3/experiment/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3/experiment/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022_3/experiment/clf_ml_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3/experiment/clf_ml_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022_3/experiment/concat_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3/experiment/concat_v2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +61,7 @@
       <recent name="$PROJECT_DIR$/2022_3/simulation/data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.clf_ml">
+  <component name="RunManager" selected="Python.concat_v2">
     <configuration name="Triplet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="meta_description" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,7 +128,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="generation (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="concat_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="meta_description" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,12 +136,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2022_3/simulation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2022_3/experiment" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2022_3/simulation/generation" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2022_3/experiment/concat_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.concat_v2" />
         <item itemvalue="Python.clf_ml" />
         <item itemvalue="Python.Triplet" />
         <item itemvalue="Python.plot" />
         <item itemvalue="Python.VAE" />
-        <item itemvalue="Python.generation (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +234,18 @@
       <workItem from="1652958771538" duration="29000" />
       <workItem from="1652958807440" duration="2517000" />
       <workItem from="1654576888703" duration="1275000" />
+      <workItem from="1654582910589" duration="276000" />
+      <workItem from="1654596933306" duration="1483000" />
+      <workItem from="1654661632618" duration="6438000" />
     </task>
+    <task id="LOCAL-00001" summary="add files">
+      <created>1654583118936</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654583118936</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +275,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add files" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/information$refbackup_ideal.coverage" NAME="refbackup_ideal Coverage Results" MODIFIED="1639549805220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/information$plot.coverage" NAME="plot Coverage Results" MODIFIED="1648139920820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/simulation" />
@@ -281,6 +290,7 @@
     <SUITE FILE_PATH="coverage/meta_description$clf_ml.coverage" NAME="clf_ml Coverage Results" MODIFIED="1652334828663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/experiment" />
     <SUITE FILE_PATH="coverage/meta_description$concat_hz.coverage" NAME="concat_hz Coverage Results" MODIFIED="1652074411124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/experiment" />
     <SUITE FILE_PATH="coverage/information$h_supervised.coverage" NAME="h_supervised Coverage Results" MODIFIED="1649833409984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/experiment" />
+    <SUITE FILE_PATH="coverage/meta_description$concat_v2.coverage" NAME="concat_v2 Coverage Results" MODIFIED="1654598042784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/experiment" />
     <SUITE FILE_PATH="coverage/information$refbackup_comp_mi_complexity.coverage" NAME="refbackup_comp_mi_complexity Coverage Results" MODIFIED="1639540979571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/information$z.coverage" NAME="z Coverage Results" MODIFIED="1648638767992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/experiment" />
     <SUITE FILE_PATH="coverage/information$clf_ml.coverage" NAME="clf_ml Coverage Results" MODIFIED="1650005046437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2022_3/experiment" />

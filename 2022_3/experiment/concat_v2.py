@@ -133,18 +133,18 @@ if __name__ == '__main__':
             hpos, zpos = model(positive.double())
             hneg, zneg = model(negative.double())
             loss= criterion(hanc, hpos, hneg, zanc, zpos, zneg)
-            _loss = loss.cpu().detach().numpy()
-
             loss.backward()
             optimizer.step()
 
-            _anc_data = torch.cat((anchor.view(args.batch, -1), hanc.view(args.batch, -1), zanc.view(args.batch, -1)), 1)
+            _loss = loss.cpu().detach().numpy()
+            _anc_data = torch.cat((anchor.view(args.batch, -1), hanc.view(args.batch, -1), zanc.view(args.batch, -1)), 1).cpu().detach()
             _label_data = torch.cat((anchor_label.view(args.batch, -1), anchor_label_u.view(args.batch, -1)), 1)
             _loss_data = torch.Tensor(_loss).resize(1, 1)
-            # print(loss_data, _loss_data)
+
             loss_data = torch.cat((loss_data, _loss_data), 0)
-            anc_data = torch.cat((anc_data, _anc_data.view(args.batch, -1)), 0)
             label_data = torch.cat((label_data, _label_data), 0)
+            anc_data = torch.cat((anc_data, _anc_data.reshape(args.batch, -1)), 0)
+
 
         ## model save, output save ##
         if epoch % 10 == 0:
